@@ -1,0 +1,66 @@
+nav.black {
+  background: $color-black;
+  padding: 1.5rem 0 1rem 0;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  transition: 0.5s;
+  // background-color: $color-black;
+  padding: 3.5rem 0 1rem 0;
+  z-index: 999;
+
+  &__logo {
+    display: inline-block;
+    font-size: 3rem;
+    width: auto;
+    padding: 0 2rem;
+    text-align: center;
+    color: $color-white;
+    cursor: pointer;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--left {
+      width: 35%;
+      text-align: right;
+    }
+
+    &--right {
+      width: 35%;
+      text-align: left;
+    }
+
+    ul {
+      list-style: none;
+      overflow: hidden;
+      color: $color-white;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline-block;
+        padding: 1rem 1.8rem;
+        cursor: pointer;
+
+        .nav__links {
+          text-decoration: none;
+          color: $color-white;
+          font-size: 1.5rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
+
+// @todo:
+// 1. make sure that the logo is in the middle
+// 2. change the font of the logo

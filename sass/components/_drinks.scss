@@ -1,0 +1,58 @@
+.drinks {
+  padding: 10rem 0;
+  // width: 100%;
+  // background: yellow;
+
+  &__header {
+    height: 8rem;
+    width: 40rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__menu__container {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  &__menu__list {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__items {
+      color: $color-white;
+      display: flex;
+      width: 30%;
+      margin-bottom: 1.5rem;
+
+      &--left {
+        width: 80%;
+        text-align: left;
+      }
+
+      &--right {
+        width: 20%;
+        text-align: right;
+      }
+
+      &--name {
+        font-size: 1.65rem;
+        text-transform: capitalize;
+        font-weight: 600;
+      }
+
+      &--description {
+        font-size: 1.5rem;
+        line-height: 1.2;
+      }
+
+      &--price {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

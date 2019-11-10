@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- for font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+
+    <!-- jquery and js -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/jquery/navShrink.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Restaurant website -- untitled right now</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__menu">
+        <div class="nav__menu--left">
+          <ul>
+            <li><a class="nav__links" id="nav-link-home">Home</a></li>
+            <li><a class="nav__links" id="nav-link-about">About</a></li>
+            <li><a class="nav__links" id="nav-link-menu">Menu</a></li>
+          </ul>
+        </div>
+        <div class="nav__logo" id="nav-link-logo">
+          RESTAURANTNAME
+        </div>
+        <div class="nav__menu--right">
+          <ul>
+            <li>
+              <a class="nav__links" id="nav-link-drinks">Drinks</a>
+            </li>
+            <li>
+              <a class="nav__links" id="nav-link-reservation">Reservation</a>
+            </li>
+            <li><a class="nav__links" id="nav-link-location">Location</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="header" id="header">
+      <div class="header__information">
+        <div class="header__information--weekdays">
+          <p class="header__text--days">monday - friday</p>
+          <p class="header__text--time">5-10pm</p>
+        </div>
+        <div class="header__information--saturday">
+          <p class="header__text--days">saturday</p>
+          <p class="header__text--time">11am-4pm / 5pm-10pm</p>
+        </div>
+        <div class="header__information--sunday">
+          <p class="header__text--days">sunday</p>
+          <p class="header__text--time">11am-4pm / 5pm-9pm</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-menu-drinks" id="section-menu-drinks">
+        <div class="drinks container">
+          <!-- this is for the cocktail list -->
+          <div class="drinks__menu__container">
+            <div class="drinks__header">
+              <h3 class="heading-tertiary-white">cocktails</h3>
+            </div>
+            <div class="drinks__menu__list">
+              <!-- THE DRINK MENU ITEMS. 1 ITEM PER drinks__menu__list__items DIV -->
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    moscow mule
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    new amsterdam vodka, hose made ginger beer
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $10.75
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    hawaiian mule
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    new amsterdam pineapple vodka, ginger beer
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $10.75
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    jameson mule
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    jameson's isish whiskey, house made ginger beer
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $10.75
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    magic margarita
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    don julio blanco tequilaa, color-changing cirtus agave
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $13.25
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    house margarita
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    chavo malo tequila blanco, triple sac, citrys agave, fresh
+                    lime
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $10.75
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    classic mojito
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    bacardi superior rum, fresh lime, mint
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $20
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    black orchid
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    svedka raspberry vodka, dekuper blue curacao & watermelon
+                    pucker, cranberry juice
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $11.50
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    classic mojito
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    bacardi superior rum, fresh lime, mint
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $20
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    bloody mary
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    tito's handmade vodka, filthy bloody mary mix, spicy candied
+                    bacon, olive, fresh lime
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $11.75
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    blackberry smash
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    svedka raspberry vodka, st. germain elderflower, orange
+                    bitters, blackberry
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $11
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    pineapple express
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    new amsterdam pineapple vodkaa, cruzan pineapple rum, monin
+                    mojito, fresh pineapple, mint
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $11
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    old 43
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    woodford reserve bourbon, licor 43, cirtrus agave, orange
+                    bitters
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $11.50
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    bold fashioned
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    maker's mark bourbon, orange liqueur, hickory smoked black
+                    cherry syrup, orange bitters, smoked black cherry
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $11.50
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- this is for the beer list -->
+          <div class="drinks__menu__container">
+            <div class="drinks__header">
+              <h3 class="heading-tertiary-white">beer on tap</h3>
+            </div>
+            <div class="drinks__menu__list">
+              <!-- THE DRINK MENU ITEMS. 1 ITEM PER drinks__menu__list__items DIV -->
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    allagash white
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    White Ale | ABV 5% | Portland, ME
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $7 / $12
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    blue moon
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    White Ale | ABV 5.4% | Golden, CO
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $7 / $12
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    hoegaarden white
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    White Ale | ABV 5% | Belgium
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $7 / $12
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    shock top
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    White Ale | ABV 5.2% | St. Louis, MO
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $7 / $12
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    blue moon mango wheat
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    Fruit Beer | ABV 6.2% | Golden, CO
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $7 / $12
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    lost coast apricot wheat
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    Fruit Beer | ABV 5% | Eureka, CA
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $7 / $12
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    lost coast tangerine wheat
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    Fruit Beer | ABV 5% | Eureka, CA
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $7 / $12
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    alaskan amber
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    Amber Ale | ABV 5.3% | Juneau, AK
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $7 / $12
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    mad river jamaica red
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    Amber Ale | ABV 6.5% | Fort Collins, CO
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $7 / $12
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    ballast point sculpin
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    India Pale Ale | ABV 7% | San Diego, CA
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $7 / $12
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    alpine duet
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    India Pale Ale | ABV 7% | Alpine, CA
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $7 / $12
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    deschutes fresh squeezed
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    India Pale Ale | ABV 6% | Bend, OR
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $7 / $12
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    knee deep hoptologist
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    Imperial IPA | ABV 9% | Auburn, CA
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $7 / $12
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    elysian space dust
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    Imperial IPA | ABV 8.2% | Seattle, WA
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $7 / $12
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    lagunitas india pale ale
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    India Pale Ale| ABV 6.2% | Petaluma, CA
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $7 / $12
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    santa clara valley electric tower
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    India Pale Ale | ABV 7.1% | San Jose, CA
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $7 / $12
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    sierra nevada hazy little thing
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    Hazy IPA | ABV 6.7% | Chico, CA
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $7 / $12
+                  </p>
+                </div>
+              </div>
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    stone IPA
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    Indian Pale Ale | ABV 6.9% | Escondido, CA
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $7 / $12
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- this is for the wine list -->
+          <div class="drinks__menu__container">
+            <div class="drinks__header">
+              <h3 class="heading-tertiary-white">wine</h3>
+            </div>
+            <div class="drinks__menu__list">
+              <!-- THE DRINK MENU ITEMS. 1 ITEM PER drinks__menu__list__items DIV -->
+              <div class="drinks__menu__list__items">
+                <div class="drinks__menu__list__items--left">
+                  <p class="drinks__menu__list__items--name">
+                    moscow mule
+                  </p>
+                  <p class="drinks__menu__list__items--description">
+                    new amsterdam vodka, hose made ginger beer
+                  </p>
+                </div>
+                <div class="drinks__menu__list__items--right">
+                  <p class="drinks__menu__list__items--price">
+                    $10.75
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of <div class="drinks container" -->
+      </section>
+
+      <section class="section-menu" id="section-menu">
+        <div class="menu container">
+          <!-- this is for the appetizer list -->
+          <div class="menu__container">
+            <div class="menu__header">
+              <h3 class="heading-tertiary">appetizer</h3>
+            </div>
+            <div class="menu__list">
+              <!-- THE MENU ITEMS. 1 ITEM PER menu__list__items DIV -->
+              <div class="menu__list__items">
+                <div class="menu__list__items--left">
+                  <p class="menu__list__items--name">
+                    chicken nachos
+                  </p>
+                  <p class="menu__list__items--description">
+                    beans, cheese, red & green sauce, tomato, cilantro, onions,
+                    guacamole, sour cream.
+                  </p>
+                </div>
+                <div class="menu__list__items--right">
+                  <p class="menu__list__items--price">
+                    $14.25
+                  </p>
+                </div>
+              </div>
+              <div class="menu__list__items">
+                <div class="menu__list__items--left">
+                  <p class="menu__list__items--name">
+                    queso dip
+                  </p>
+                  <p class="menu__list__items--description">
+                    roasted poblano, chipotle, warm flour tortillas & chips.
+                  </p>
+                </div>
+                <div class="menu__list__items--right">
+                  <p class="menu__list__items--price">
+                    $12.45
+                  </p>
+                </div>
+              </div>
+              <div class="menu__list__items">
+                <div class="menu__list__items--left">
+                  <p class="menu__list__items--name">
+                    chicken lettuce wraps
+                  </p>
+                  <p class="menu__list__items--description">
+                    tofu, green onions, water chestnuts, wonton chips, sweet chili, spicy peanut vinegarette, firecracker sauce.
+                  </p>
+                </div>
+                <div class="menu__list__items--right">
+                  <p class="menu__list__items--price">
+                    $12.95
+                  </p>
+                </div>
+              </div>
+              <div class="menu__list__items">
+                <div class="menu__list__items--left">
+                  <p class="menu__list__items--name">
+                    fried chicken tenders
+                  </p>
+                  <p class="menu__list__items--description">
+                    maple dijon, ranch, fries.
+                  </p>
+                </div>
+                <div class="menu__list__items--right">
+                  <p class="menu__list__items--price">
+                    $11.25
+                  </p>
+                </div>
+              </div>
+              <div class="menu__list__items">
+                <div class="menu__list__items--left">
+                  <p class="menu__list__items--name">
+                    classic sliders
+                  </p>
+                  <p class="menu__list__items--description">
+                    cheese, special sauce, arugula, tomato, pickes, fries.
+                  </p>
+                </div>
+                <div class="menu__list__items--right">
+                  <p class="menu__list__items--price">
+                    $12.75
+                  </p>
+                </div>
+              </div>
+              <div class="menu__list__items">
+                <div class="menu__list__items--left">
+                  <p class="menu__list__items--name">
+                    fried mac & cheese
+                  </p>
+                  <p class="menu__list__items--description">
+                    with tomato bisque
+                  </p>
+                </div>
+                <div class="menu__list__items--right">
+                  <p class="menu__list__items--price">
+                    $12.95
+                  </p>
+                </div>
+              </div>
+              <div class="menu__list__items">
+                <div class="menu__list__items--left">
+                  <p class="menu__list__items--name">
+                    coconut shrimp
+                  </p>
+                  <p class="menu__list__items--description">
+                    pickeled vegetables, sweet chili sauce, basil pesto.
+                  </p>
+                </div>
+                <div class="menu__list__items--right">
+                  <p class="menu__list__items--price">
+                    $14.95
+                  </p>
+                </div>
+              </div>
+              <div class="menu__list__items">
+                <div class="menu__list__items--left">
+                  <p class="menu__list__items--name">
+                    fried calamari
+                  </p>
+                  <p class="menu__list__items--description">
+                    spicy tomato sauce, roasted jalapeno tartar.
+                  </p>
+                </div>
+                <div class="menu__list__items--right">
+                  <p class="menu__list__items--price">
+                    $13.25
+                  </p>
+                </div>
+              </div>
+              <div class="menu__list__items">
+                <div class="menu__list__items--left">
+                  <p class="menu__list__items--name">
+                    moo shu egg rolls
+                  </p>
+                  <p class="menu__list__items--description">
+                    chicken, chili cream cheese, carrots, green onions, cilantro, spinach.
+                  </p>
+                </div>
+                <div class="menu__list__items--right">
+                  <p class="menu__list__items--price">
+                    $10.85
+                  </p>
+                </div>
+              </div>
+              <div class="menu__list__items">
+                <div class="menu__list__items--left">
+                  <p class="menu__list__items--name">
+                    onion ring tower
+                  </p>
+                  <p class="menu__list__items--description">
+                    beer-battered, parmesan, chipotle ranch, buttermilk ranch
+                  </p>
+                </div>
+                <div class="menu__list__items--right">
+                  <p class="menu__list__items--price">
+                    $10.45
+                  </p>
+                </div>
+              </div>
+              <div class="menu__list__items">
+                <div class="menu__list__items--left">
+                  <p class="menu__list__items--name">
+                    traditional wings
+                  </p>
+                  <p class="menu__list__items--description">
+                    options are buffalo, firecracker, korean, ancho bbq, whiskey black pepper.
+                  </p>
+                </div>
+                <div class="menu__list__items--right">
+                  <p class="menu__list__items--price">
+                    $13.75
+                  </p>
+                </div>
+              </div>
+              <div class="menu__list__items">
+                <div class="menu__list__items--left">
+                  <p class="menu__list__items--name">
+                    boneless wings
+                  </p>
+                  <p class="menu__list__items--description">
+                    options are bufffalo, firecracker, korean, ancho bbq, whiskey black pepper
+                  </p>
+                </div>
+                <div class="menu__list__items--right">
+                  <p class="menu__list__items--price">
+                    $12.75
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of <div class="drinks container" -->
+      </section>
+    </main>
+  </body>
+</html>

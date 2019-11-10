@@ -1,0 +1,17 @@
+.section-menu-drinks {
+  min-height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-black, 0.5),
+      rgba($color-black, 0.5)
+    ),
+    url('https://storage.needpix.com/rsynced_images/pineapple-1406119_1280.jpg');
+
+  background-size: cover;
+  background-position: center;
+}
+
+.section-menu {
+  min-height: 100vh;
+  background-color: whitesmoke;
+}

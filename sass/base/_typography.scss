@@ -1,0 +1,20 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: $color-black;
+}
+
+//have 2 types with 2 different font color
+.heading-tertiary {
+  color: $color-black;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.heading-tertiary-white {
+  color: $color-white;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
