@@ -1,19 +1,22 @@
 $(document).ready(function() {
-  $('#nav-link-menu').click(function() {
-    $path = $('#section-menu').offset().top;
-    $('html, body').animate({ scrollTop: $path }, 850);
-  });
-  $('#nav-link-drinks').click(function() {
-    $path = $('#section-menu-drinks').offset().top;
-    $('html, body').animate({ scrollTop: $path }, 850);
-  });
-
   $('#nav-link-home').click(function() {
     $path = $('#header').offset().top;
     $('html, body').animate({ scrollTop: $path }, 850);
   });
   $('#nav-link-logo').click(function() {
     $path = $('#header').offset().top;
+    $('html, body').animate({ scrollTop: $path }, 850);
+  });
+  $('#nav-link-about').click(function() {
+    $path = $('#section-about').offset().top;
+    $('html, body').animate({ scrollTop: $path }, 850);
+  });
+  $('#nav-link-drinks').click(function() {
+    $path = $('#section-menu-drinks').offset().top;
+    $('html, body').animate({ scrollTop: $path }, 850);
+  });
+  $('#nav-link-menu').click(function() {
+    $path = $('#section-menu').offset().top;
     $('html, body').animate({ scrollTop: $path }, 850);
   });
 });

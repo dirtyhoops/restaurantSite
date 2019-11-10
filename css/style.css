@@ -58,93 +58,89 @@ body {
 
 .heading-tertiary {
   color: #000;
-  font-size: 4rem;
+  font-size: 2.5rem;
   text-transform: uppercase; }
 
 .heading-tertiary-white {
   color: #fff;
-  font-size: 4rem;
+  font-size: 2.5rem;
   text-transform: uppercase; }
 
 .container {
   margin: 0 auto;
   max-width: 120rem; }
 
-.menu {
-  padding: 10rem 0; }
-  .menu__header {
-    height: 8rem;
-    width: 40rem;
-    margin: 0 auto;
-    text-align: center; }
-  .menu__container {
-    width: 100%;
-    margin-bottom: 3rem; }
-  .menu__list {
-    display: flex;
-    width: 100%;
-    padding: 1rem;
-    margin-top: 3rem;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-    .menu__list__items {
-      color: #000;
-      display: flex;
-      width: 30%;
-      margin-bottom: 1.5rem; }
-      .menu__list__items--left {
-        width: 80%;
-        text-align: left; }
-      .menu__list__items--right {
-        width: 20%;
-        text-align: right; }
-      .menu__list__items--name {
-        font-size: 1.65rem;
-        text-transform: capitalize;
-        font-weight: 600; }
-      .menu__list__items--description {
-        font-size: 1.5rem;
-        line-height: 1.2; }
-      .menu__list__items--price {
-        font-size: 1.5rem; }
+.menu__header {
+  height: 8rem;
+  margin: 0 auto;
+  text-align: center; }
 
-.drinks {
-  padding: 10rem 0; }
-  .drinks__header {
-    height: 8rem;
-    width: 40rem;
-    margin: 0 auto;
-    text-align: center; }
-  .drinks__menu__container {
-    width: 100%;
-    margin-bottom: 3rem; }
-  .drinks__menu__list {
+.menu__container {
+  width: 100%;
+  margin-bottom: 3rem; }
+
+.menu__list {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .menu__list__items {
+    color: #000;
     display: flex;
-    width: 100%;
-    padding: 1rem;
-    margin-top: 3rem;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-    .drinks__menu__list__items {
-      color: #fff;
-      display: flex;
-      width: 30%;
-      margin-bottom: 1.5rem; }
-      .drinks__menu__list__items--left {
-        width: 80%;
-        text-align: left; }
-      .drinks__menu__list__items--right {
-        width: 20%;
-        text-align: right; }
-      .drinks__menu__list__items--name {
-        font-size: 1.65rem;
-        text-transform: capitalize;
-        font-weight: 600; }
-      .drinks__menu__list__items--description {
-        font-size: 1.5rem;
-        line-height: 1.2; }
-      .drinks__menu__list__items--price {
-        font-size: 1.5rem; }
+    width: 30%;
+    margin-bottom: 1.5rem; }
+    .menu__list__items--left {
+      width: 80%;
+      text-align: left; }
+    .menu__list__items--right {
+      width: 20%;
+      text-align: right; }
+    .menu__list__items--name {
+      font-size: 1.65rem;
+      text-transform: capitalize;
+      font-weight: 600; }
+    .menu__list__items--description {
+      font-size: 1.5rem;
+      line-height: 1.2; }
+    .menu__list__items--price {
+      font-size: 1.5rem; }
+
+.drinks__header {
+  height: 8rem;
+  margin: 0 auto;
+  text-align: center; }
+
+.drinks__menu__container {
+  width: 100%;
+  margin-bottom: 3rem; }
+
+.drinks__menu__list {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .drinks__menu__list__items {
+    color: #fff;
+    display: flex;
+    width: 30%;
+    margin-bottom: 1.5rem; }
+    .drinks__menu__list__items--left {
+      width: 80%;
+      text-align: left; }
+    .drinks__menu__list__items--right {
+      width: 20%;
+      text-align: right; }
+    .drinks__menu__list__items--name {
+      font-size: 1.65rem;
+      text-transform: capitalize;
+      font-weight: 600; }
+    .drinks__menu__list__items--description {
+      font-size: 1.5rem;
+      line-height: 1.2; }
+    .drinks__menu__list__items--price {
+      font-size: 1.5rem; }
 
 .header {
   height: 100vh;
@@ -189,7 +185,7 @@ nav.black {
     padding: 0 2rem;
     text-align: center;
     color: #fff;
-    cursor: pointer; }
+    letter-spacing: 3px; }
   .nav__menu {
     display: flex;
     justify-content: center;
@@ -218,12 +214,18 @@ nav.black {
           text-transform: uppercase;
           letter-spacing: 1px; }
 
+.section-about {
+  min-height: 100vh;
+  background-color: whitesmoke; }
+
 .section-menu-drinks {
   min-height: 100vh;
+  padding: 10rem 0;
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://storage.needpix.com/rsynced_images/pineapple-1406119_1280.jpg");
   background-size: cover;
   background-position: center; }
 
 .section-menu {
+  padding: 10rem 0;
   min-height: 100vh;
   background-color: whitesmoke; }
