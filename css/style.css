@@ -50,61 +50,35 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  /* font-size: 16px; */
   line-height: 1.7;
   color: #000; }
 
 .heading-tertiary {
   color: #000;
   font-size: 2.5rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 3px; }
 
 .heading-tertiary-white {
   color: #fff;
   font-size: 2.5rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 3px; }
 
 .container {
   margin: 0 auto;
   max-width: 120rem; }
 
-.menu__header {
-  height: 8rem;
-  margin: 0 auto;
-  text-align: center; }
+.u-margin-bottom-sm {
+  margin-bottom: 0.8rem; }
 
-.menu__container {
-  width: 100%;
+.u-margin-bottom-md {
   margin-bottom: 3rem; }
 
-.menu__list {
-  display: flex;
-  width: 100%;
-  padding: 1rem;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-  .menu__list__items {
-    color: #000;
-    display: flex;
-    width: 30%;
-    margin-bottom: 1.5rem; }
-    .menu__list__items--left {
-      width: 80%;
-      text-align: left; }
-    .menu__list__items--right {
-      width: 20%;
-      text-align: right; }
-    .menu__list__items--name {
-      font-size: 1.65rem;
-      text-transform: capitalize;
-      font-weight: 600; }
-    .menu__list__items--description {
-      font-size: 1.5rem;
-      line-height: 1.2; }
-    .menu__list__items--price {
-      font-size: 1.5rem; }
+.u-margin-bottom-lg {
+  margin-bottom: 6rem; }
 
 .drinks__header {
   height: 8rem;
@@ -142,6 +116,127 @@ body {
     .drinks__menu__list__items--price {
       font-size: 1.5rem; }
 
+.images {
+  width: 100%;
+  height: 200vh;
+  text-align: center;
+  background-color: white; }
+  .images__container--small {
+    width: 33.3%;
+    height: 40%;
+    display: inline-block; }
+  .images__container--medium {
+    width: 100%;
+    height: 20%; }
+  .images__container--big {
+    width: 66.5%;
+    height: 40%;
+    display: inline-block;
+    background-color: yellow; }
+  .images__box--small {
+    width: 100%;
+    height: 50%;
+    background-color: blue;
+    border: 0.5rem solid white;
+    position: relative; }
+  .images__box--smallmed {
+    width: 33.2%;
+    height: 100%;
+    background-color: green;
+    border: 0.5rem solid white;
+    display: inline-block;
+    position: relative; }
+  .images__box--big {
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    border: 0.5rem solid white;
+    position: relative; }
+  .images__img {
+    background-size: cover;
+    background-position: center; }
+    .images__img--1 {
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2)), url("https://s3-media0.fl.yelpcdn.com/bphoto/zA_nRUTfM3tB4u_x1AaRXg/o.jpg"); }
+    .images__img--2 {
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://images.pexels.com/photos/46239/salmon-dish-food-meal-46239.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); }
+    .images__img--3 {
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://i.pinimg.com/originals/fb/d1/c5/fbd1c59e131eedc2692fd34d98f7e879.jpg"); }
+    .images__img--4 {
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://www.gannett-cdn.com/presto/2019/01/23/PNDN/95b07506-ff6d-45f2-bfce-a66c49dc10da-NDN_0123_IN_THE_KNOW_yard_house_13.jpg?width=2560"); }
+    .images__img--5 {
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://s3-media0.fl.yelpcdn.com/bphoto/pRm2sH1YaQV3HDzVLRacfQ/o.jpg"); }
+    .images__img--6 {
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://images.pexels.com/photos/159291/beer-machine-alcohol-brewery-159291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); }
+    .images__img--7 {
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://scontent-lhr3-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/69274249_2383865485067284_1630994424833829078_n.jpg?_nc_ht=scontent-lhr3-1.cdninstagram.com&oh=88cca37572bdbdb62c405700739eb26c&oe=5DFF1670&ig_cache_key=MjEyMjA0MzE3MzY3ODA3OTc4OQ%3D%3D.2"); }
+    .images__img--8 {
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://s3-media0.fl.yelpcdn.com/bphoto/kmX0TjYenubm1vG3iJKB7A/o.jpg"); }
+    .images__img--9 {
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://images.pexels.com/photos/4784/alcohol-bar-party-cocktail.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); }
+  .images__text {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 2rem 3rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px; }
+
+.location__left {
+  display: inline-block;
+  width: 30%; }
+  .location__left--header {
+    font-size: 2.5rem;
+    text-transform: capitalize; }
+  .location__left--text {
+    font-size: 1.5rem;
+    text-transform: capitalize; }
+
+.location__right {
+  display: inline-block;
+  width: 69%;
+  vertical-align: top;
+  height: 50rem;
+  background-color: yellow; }
+
+.menu__header {
+  height: 8rem;
+  margin: 0 auto;
+  text-align: center; }
+
+.menu__container {
+  width: 100%;
+  margin-bottom: 3rem; }
+
+.menu__list {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .menu__list__items {
+    color: #000;
+    display: flex;
+    width: 30%;
+    margin-bottom: 1.5rem; }
+    .menu__list__items--left {
+      width: 80%;
+      text-align: left; }
+    .menu__list__items--right {
+      width: 20%;
+      text-align: right; }
+    .menu__list__items--name {
+      font-size: 1.65rem;
+      text-transform: capitalize;
+      font-weight: 600; }
+    .menu__list__items--description {
+      font-size: 1.5rem;
+      line-height: 1.2; }
+    .menu__list__items--price {
+      font-size: 1.5rem; }
+
 .header {
   height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.pexels.com/photos/613037/pexels-photo-613037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
@@ -156,7 +251,7 @@ body {
     position: absolute;
     padding: 2rem 4rem; }
     .header__information--weekdays, .header__information--saturday, .header__information--sunday {
-      width: 15%; }
+      width: 18%; }
   .header__text--days {
     color: #fff;
     text-transform: uppercase;
@@ -226,6 +321,15 @@ nav.black {
   background-position: center; }
 
 .section-menu {
-  padding: 10rem 0;
   min-height: 100vh;
+  padding: 10rem 0;
+  background-color: whitesmoke; }
+
+.section-images {
+  min-height: 100vh;
+  background-color: #000; }
+
+.section-location {
+  min-height: 100vh;
+  padding: 20rem 0;
   background-color: whitesmoke; }

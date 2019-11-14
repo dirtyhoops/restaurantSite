@@ -19,6 +19,14 @@ $(document).ready(function() {
     $path = $('#section-menu').offset().top;
     $('html, body').animate({ scrollTop: $path }, 850);
   });
+  $('#nav-link-reservation').click(function() {
+    $path = $('#section-reservation').offset().top;
+    $('html, body').animate({ scrollTop: $path }, 850);
+  });
+  $('#nav-link-location').click(function() {
+    $path = $('#section-location').offset().top;
+    $('html, body').animate({ scrollTop: $path }, 850);
+  });
 });
 
 // for navigation bar when it's mobile size

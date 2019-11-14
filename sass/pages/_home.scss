@@ -12,13 +12,23 @@
       rgba($color-black, 0.5)
     ),
     url('https://storage.needpix.com/rsynced_images/pineapple-1406119_1280.jpg');
-
   background-size: cover;
   background-position: center;
 }
 
 .section-menu {
-  padding: 10rem 0;
   min-height: 100vh;
+  padding: 10rem 0;
+  background-color: whitesmoke;
+}
+
+.section-images {
+  min-height: 100vh;
+  background-color: $color-black;
+}
+
+.section-location {
+  min-height: 100vh;
+  padding: 20rem 0;
   background-color: whitesmoke;
 }

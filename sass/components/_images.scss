@@ -1,0 +1,151 @@
+.images {
+  width: 100%;
+  height: 200vh;
+  text-align: center;
+  background-color: white;
+
+  &__container {
+    &--small {
+      width: 33.3%;
+      height: 40%;
+      display: inline-block;
+    }
+
+    &--medium {
+      width: 100%;
+      height: 20%;
+    }
+
+    &--big {
+      width: 66.5%;
+      height: 40%;
+      display: inline-block;
+      background-color: yellow;
+    }
+  }
+
+  &__box {
+    &--small {
+      width: 100%;
+      height: 50%;
+      background-color: blue;
+      border: 0.5rem solid white;
+      position: relative;
+    }
+
+    &--smallmed {
+      width: 33.2%;
+      height: 100%;
+      background-color: green;
+      border: 0.5rem solid white;
+      display: inline-block;
+      position: relative;
+    }
+
+    &--big {
+      width: 100%;
+      height: 100%;
+      background-color: yellow;
+      border: 0.5rem solid white;
+      position: relative;
+    }
+  }
+
+  &__img {
+    background-size: cover;
+    background-position: center;
+
+    &--1 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-white, 0.2),
+          rgba($color-black, 0.2)
+        ),
+        url('https://s3-media0.fl.yelpcdn.com/bphoto/zA_nRUTfM3tB4u_x1AaRXg/o.jpg');
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-black, 0.2),
+          rgba($color-black, 0.2)
+        ),
+        url('https://images.pexels.com/photos/46239/salmon-dish-food-meal-46239.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-black, 0.2),
+          rgba($color-black, 0.2)
+        ),
+        url('https://i.pinimg.com/originals/fb/d1/c5/fbd1c59e131eedc2692fd34d98f7e879.jpg');
+    }
+
+    &--4 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-black, 0.2),
+          rgba($color-black, 0.2)
+        ),
+        url('https://www.gannett-cdn.com/presto/2019/01/23/PNDN/95b07506-ff6d-45f2-bfce-a66c49dc10da-NDN_0123_IN_THE_KNOW_yard_house_13.jpg?width=2560');
+    }
+
+    &--5 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-black, 0.2),
+          rgba($color-black, 0.2)
+        ),
+        url('https://s3-media0.fl.yelpcdn.com/bphoto/pRm2sH1YaQV3HDzVLRacfQ/o.jpg');
+    }
+
+    &--6 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-black, 0.2),
+          rgba($color-black, 0.2)
+        ),
+        url('https://images.pexels.com/photos/159291/beer-machine-alcohol-brewery-159291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    }
+
+    &--7 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-black, 0.2),
+          rgba($color-black, 0.2)
+        ),
+        url('https://scontent-lhr3-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/69274249_2383865485067284_1630994424833829078_n.jpg?_nc_ht=scontent-lhr3-1.cdninstagram.com&oh=88cca37572bdbdb62c405700739eb26c&oe=5DFF1670&ig_cache_key=MjEyMjA0MzE3MzY3ODA3OTc4OQ%3D%3D.2');
+    }
+
+    &--8 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-black, 0.2),
+          rgba($color-black, 0.2)
+        ),
+        url('https://s3-media0.fl.yelpcdn.com/bphoto/kmX0TjYenubm1vG3iJKB7A/o.jpg');
+    }
+
+    &--9 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-black, 0.2),
+          rgba($color-black, 0.2)
+        ),
+        url('https://images.pexels.com/photos/4784/alcohol-bar-party-cocktail.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    }
+  }
+
+  &__text {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 2rem 3rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $color-white;
+    letter-spacing: 2px;
+  }
+}
