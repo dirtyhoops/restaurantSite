@@ -80,6 +80,31 @@ body {
 .u-margin-bottom-lg {
   margin-bottom: 6rem; }
 
+.about__container {
+  display: flex; }
+  .about__container__left {
+    width: 50%;
+    padding-right: 10rem; }
+  .about__container__right {
+    width: 50%; }
+
+.about__text--sub {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 1.2rem; }
+
+.about__text--heading {
+  font-size: 3rem;
+  text-transform: capitalize;
+  line-height: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem; }
+
+.about__text--description {
+  font-size: 1.7rem;
+  letter-spacing: 1px; }
+
 .drinks__header {
   height: 8rem;
   margin: 0 auto;
@@ -115,12 +140,35 @@ body {
       line-height: 1.2; }
     .drinks__menu__list__items--price {
       font-size: 1.5rem; }
+  @media (max-width: 28.125em) {
+    .drinks__menu__list {
+      padding: 1rem 2.5rem; }
+      .drinks__menu__list__items {
+        width: 100%;
+        margin-bottom: 1.5rem; }
+        .drinks__menu__list__items--left {
+          width: 80%;
+          text-align: left; }
+        .drinks__menu__list__items--right {
+          width: 20%;
+          text-align: right; }
+        .drinks__menu__list__items--name {
+          font-size: 2rem; }
+        .drinks__menu__list__items--description {
+          font-size: 1.6rem;
+          line-height: 1.2; }
+        .drinks__menu__list__items--price {
+          font-size: 1.8rem; } }
 
 .images {
   width: 100%;
   height: 200vh;
   text-align: center;
-  background-color: white; }
+  background-color: white;
+  border: 0.5rem solid white; }
+  @media (max-width: 28.125em) {
+    .images {
+      min-height: 370rem; } }
   .images__container--small {
     width: 33.3%;
     height: 40%;
@@ -129,29 +177,39 @@ body {
     width: 100%;
     height: 20%; }
   .images__container--big {
-    width: 66.5%;
+    width: 66.7%;
     height: 40%;
-    display: inline-block;
-    background-color: yellow; }
+    display: inline-block; }
+  @media (max-width: 28.125em) {
+    .images__container--small {
+      width: 100%;
+      height: 22.22%; }
+    .images__container--medium {
+      width: 100%;
+      height: 33.33%; }
+    .images__container--big {
+      width: 100%;
+      height: 11.11%; } }
   .images__box--small {
     width: 100%;
     height: 50%;
-    background-color: blue;
     border: 0.5rem solid white;
     position: relative; }
   .images__box--smallmed {
-    width: 33.2%;
+    width: calc(100% / 3);
     height: 100%;
-    background-color: green;
     border: 0.5rem solid white;
     display: inline-block;
     position: relative; }
   .images__box--big {
     width: 100%;
     height: 100%;
-    background-color: yellow;
     border: 0.5rem solid white;
     position: relative; }
+  @media (max-width: 28.125em) {
+    .images__box--smallmed {
+      width: 100%;
+      height: calc(100% / 3); } }
   .images__img {
     background-size: cover;
     background-position: center; }
@@ -184,22 +242,23 @@ body {
     color: #fff;
     letter-spacing: 2px; }
 
-.location__left {
-  display: inline-block;
-  width: 30%; }
-  .location__left--header {
-    font-size: 2.5rem;
-    text-transform: capitalize; }
-  .location__left--text {
-    font-size: 1.5rem;
-    text-transform: capitalize; }
-
-.location__right {
-  display: inline-block;
-  width: 69%;
-  vertical-align: top;
-  height: 50rem;
-  background-color: yellow; }
+.location {
+  padding: 0 0 20rem 0; }
+  .location__left {
+    display: inline-block;
+    width: 30%; }
+    .location__left--header {
+      font-size: 2.5rem;
+      text-transform: capitalize; }
+    .location__left--text {
+      font-size: 1.5rem;
+      text-transform: capitalize; }
+  .location__right {
+    display: inline-block;
+    width: 69%;
+    vertical-align: top;
+    height: 50rem;
+    background-color: yellow; }
 
 .menu__header {
   height: 8rem;
@@ -237,12 +296,56 @@ body {
     .menu__list__items--price {
       font-size: 1.5rem; }
 
+.reservation {
+  height: 40rem;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  display: table; }
+  .reservation__container {
+    display: table-cell;
+    vertical-align: middle; }
+  .reservation__header {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700; }
+  .reservation__text {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.8rem; }
+  .reservation__text2 {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-top: 4rem; }
+  .reservation__button {
+    transition: all 0.4s ease; }
+    .reservation__button:link, .reservation__button:visited {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.3rem;
+      display: inline-block;
+      padding: 0.7em 2rem;
+      border: 2px solid white; }
+    .reservation__button:hover {
+      color: #000;
+      background: #fff; }
+
 .header {
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.pexels.com/photos/613037/pexels-photo-613037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.squarespace-cdn.com/content/v1/5bf8c1132714e5d0ff5dbf45/1544760468029-6QBRKRULRCGA2KDYLKS5/ke17ZwdGBToddI8pDm48kH1uLua_ElEyolII291Geut7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0ooWhOa5cxQSJsU3rXf8luWGgOUPO97bhqmJmertGzFN1MXivYV5cOOAmrw0SWHIjw/scwheaderreverse.jpg?format=2500w");
   background-size: cover;
-  background-position: top;
+  background-position: center center;
   position: relative; }
+  .header__header {
+    position: absolute;
+    top: 50%;
+    left: 20%; }
+    .header__header--main {
+      color: #fff; }
   .header__information {
     width: 100%;
     height: 12rem;
@@ -310,7 +413,8 @@ nav.black {
           letter-spacing: 1px; }
 
 .section-about {
-  min-height: 100vh;
+  min-height: 70vh;
+  padding: 15rem 0;
   background-color: whitesmoke; }
 
 .section-menu-drinks {
@@ -327,9 +431,10 @@ nav.black {
 
 .section-images {
   min-height: 100vh;
-  background-color: #000; }
+  background-color: #000;
+  font-size: 0; }
 
 .section-location {
   min-height: 100vh;
-  padding: 20rem 0;
+  padding: 20rem 0 0 0;
   background-color: whitesmoke; }

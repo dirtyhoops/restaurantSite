@@ -1,5 +1,6 @@
 .section-about {
-  min-height: 100vh;
+  min-height: 70vh;
+  padding: 15rem 0;
   background-color: whitesmoke;
 }
 
@@ -25,10 +26,11 @@
 .section-images {
   min-height: 100vh;
   background-color: $color-black;
+  font-size: 0;
 }
 
 .section-location {
   min-height: 100vh;
-  padding: 20rem 0;
+  padding: 20rem 0 0 0;
   background-color: whitesmoke;
 }

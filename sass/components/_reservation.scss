@@ -1,0 +1,52 @@
+.reservation {
+  height: 40rem;
+  width: 100%;
+  background-color: $color-black;
+  color: $color-white;
+  text-align: center;
+  display: table;
+
+  &__container {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__header {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+
+  &__text {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.8rem;
+  }
+
+  &__text2 {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-top: 4rem;
+  }
+
+  &__button {
+    transition: all 0.4s ease;
+    &:link,
+    &:visited {
+      color: $color-white;
+      text-decoration: none;
+      font-size: 1.3rem;
+      display: inline-block;
+      padding: 0.7em 2rem;
+      border: 2px solid white;
+    }
+
+    &:hover {
+      color: $color-black;
+      background: $color-white;
+    }
+  }
+}
