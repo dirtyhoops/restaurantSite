@@ -1,7 +1,7 @@
 .about {
   &__container {
     display: flex;
-    margin-bottom: 5rem;
+    margin-bottom: 15rem;
     // background: pink;
 
     &__left {
@@ -11,6 +11,17 @@
 
     &__right {
       width: 50%;
+      // background-color: pink;
+
+      &__image {
+        width: 85%;
+        height: 35rem;
+        background-color: yellow;
+        background-image: url('https://images.pexels.com/photos/2225580/pexels-photo-2225580.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        background-size: cover;
+        background-position: center bottom;
+        margin-left: 15%;
+      }
     }
   }
 
@@ -40,9 +51,10 @@
     text-align: center;
 
     &__header {
-      font-size: 3rem;
+      font-size: 3.2rem;
       text-transform: capitalize;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
+      color: $color-primary;
     }
 
     &__container {
@@ -57,7 +69,7 @@
           height: 20rem;
           width: 20rem;
           border-radius: 50%;
-          margin: 0 auto;
+          margin: 0 auto 2rem;
           background-color: yellow;
           background-repeat: no-repeat;
           &--1 {
@@ -80,13 +92,18 @@
         }
 
         &__text {
-          font-size: 1.8rem;
-          text-transform: capitalize;
-          margin-top: 2rem;
+          &--name {
+            font-size: 2rem;
+            text-transform: capitalize;
+          }
+          &--title {
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $color-grey;
+          }
         }
       }
     }
   }
 }
-
-// https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940

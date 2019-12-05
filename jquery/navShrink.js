@@ -20,7 +20,7 @@ $(document).ready(function() {
     $('html, body').animate({ scrollTop: $path }, 850);
   });
   $('#nav-link-reservation').click(function() {
-    $path = $('#section-reservation').offset().top;
+    $path = $('#reservation').offset().top;
     $('html, body').animate({ scrollTop: $path }, 850);
   });
   $('#nav-link-location').click(function() {
