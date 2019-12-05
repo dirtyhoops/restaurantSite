@@ -81,7 +81,8 @@ body {
   margin-bottom: 6rem; }
 
 .about__container {
-  display: flex; }
+  display: flex;
+  margin-bottom: 5rem; }
   .about__container__left {
     width: 50%;
     padding-right: 10rem; }
@@ -104,6 +105,42 @@ body {
 .about__text--description {
   font-size: 1.7rem;
   letter-spacing: 1px; }
+
+.about__team {
+  text-align: center; }
+  .about__team__header {
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem; }
+  .about__team__container {
+    display: flex;
+    justify-content: space-between; }
+    .about__team__container__grid {
+      width: 33%;
+      padding: 2rem 5rem; }
+      .about__team__container__grid__image {
+        height: 20rem;
+        width: 20rem;
+        border-radius: 50%;
+        margin: 0 auto;
+        background-color: yellow;
+        background-repeat: no-repeat; }
+        .about__team__container__grid__image--1 {
+          background-image: url("https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+          background-position: 73% 0%;
+          background-size: 50rem; }
+        .about__team__container__grid__image--2 {
+          background-image: url("https://images.pexels.com/photos/1250426/pexels-photo-1250426.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+          background-position: 50% 75%;
+          background-size: cover; }
+        .about__team__container__grid__image--3 {
+          background-image: url("https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+          background-position: center top;
+          background-size: cover; }
+      .about__team__container__grid__text {
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        margin-top: 2rem; }
 
 .drinks__header {
   height: 8rem;
