@@ -1,6 +1,10 @@
 .location {
   padding: 0 0 20rem 0;
 
+  @include respond(tab-portrait) {
+    padding: 0 5rem 20rem 3rem;
+  }
+
   &__header {
     width: 50%;
     margin: 0 auto;

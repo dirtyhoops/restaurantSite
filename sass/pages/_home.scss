@@ -2,6 +2,14 @@
   min-height: 100vh;
   padding: 20rem 0;
   background-color: whitesmoke;
+
+  @include respond(tab-portrait) {
+    padding: 20rem 3rem;
+  }
+
+  @include respond(phone) {
+    padding: 15rem 3rem;
+  }
 }
 
 .section-menu-drinks {
@@ -15,12 +23,36 @@
     url('https://storage.needpix.com/rsynced_images/pineapple-1406119_1280.jpg');
   background-size: cover;
   background-position: center;
+
+  @include respond(tab-portrait) {
+    padding: 10rem 3rem;
+  }
+
+  @include respond(phone) {
+    padding: 15rem 5rem;
+  }
+
+  @include respond(small-phone) {
+    padding: 13rem 2.5rem;
+  }
 }
 
 .section-menu {
   min-height: 100vh;
   padding: 10rem 0;
   background-color: whitesmoke;
+
+  @include respond(tab-portrait) {
+    padding: 10rem 3rem;
+  }
+
+  @include respond(phone) {
+    padding: 13rem 5rem;
+  }
+
+  @include respond(small-phone) {
+    padding: 13rem 2rem;
+  }
 }
 
 .section-images {
