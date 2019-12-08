@@ -10,6 +10,10 @@
   @include respond(phone) {
     padding: 15rem 3rem;
   }
+
+  @include respond(small-phone) {
+    padding: 15rem 2rem;
+  }
 }
 
 .section-menu-drinks {
@@ -62,7 +66,7 @@
 }
 
 .section-location {
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 15rem 0 0 0;
   background-color: whitesmoke;
 }

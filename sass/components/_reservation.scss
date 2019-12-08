@@ -6,6 +6,10 @@
   text-align: center;
   display: table;
 
+  @include respond(phone) {
+    height: 30rem;
+  }
+
   &__container {
     display: table-cell;
     vertical-align: middle;
@@ -19,17 +23,21 @@
   }
 
   &__text {
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 1.8rem;
   }
 
   &__text2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-transform: capitalize;
     letter-spacing: 1px;
     margin-top: 4rem;
+
+    @include respond(phone) {
+      font-size: 1.5rem;
+    }
   }
 
   &__button {
@@ -42,6 +50,10 @@
       display: inline-block;
       padding: 0.7em 2rem;
       border: 2px solid white;
+
+      @include respond(phone) {
+        font-size: 1.5rem;
+      }
     }
 
     &:hover {

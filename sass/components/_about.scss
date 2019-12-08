@@ -4,6 +4,10 @@
     margin-bottom: 15rem;
     flex-flow: row wrap;
 
+    @include respond(phone) {
+      margin-bottom: 10rem;
+    }
+
     &__left {
       width: 50%;
       padding-right: 5rem;
@@ -16,7 +20,7 @@
       }
 
       @include respond(small-phone) {
-        padding: 0 2rem;
+        padding: 0 1rem;
       }
     }
 
@@ -31,7 +35,7 @@
       }
 
       @include respond(small-phone) {
-        padding: 0 2rem;
+        padding: 0 1rem;
       }
 
       &__image {
@@ -50,15 +54,15 @@
       font-size: 1.7rem;
       text-transform: uppercase;
       letter-spacing: 4px;
-      margin-bottom: 1.2rem;
+      margin-bottom: 1rem;
     }
 
     &--heading {
       font-size: 3rem;
       text-transform: capitalize;
-      line-height: 3.5rem;
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 2rem;
+      letter-spacing: 1px;
     }
 
     &--description {
@@ -71,19 +75,24 @@
     text-align: center;
 
     &__header {
-      font-size: 3.2rem;
-      text-transform: capitalize;
+      font-size: 3rem;
+      text-transform: uppercase;
       margin-bottom: 3rem;
       color: $color-primary;
+      letter-spacing: 2px;
     }
 
     &__container {
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      justify-content: space-around;
       &__grid {
         width: 33%;
         padding: 2rem;
-        // background-color: blue;
+
+        @include respond(phone) {
+          width: 50%;
+        }
 
         &__image {
           height: 20rem;
@@ -94,14 +103,18 @@
           background-repeat: no-repeat;
 
           @include respond(small-phone) {
-            height: 15rem;
-            width: 15rem;
+            height: 17rem;
+            width: 17rem;
           }
 
           &--1 {
             background-image: url('https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-            background-position: 73% 0%;
+            background-position: 71% 0%;
             background-size: 50rem;
+
+            @include respond(small-phone) {
+              background-size: 43rem;
+            }
           }
 
           &--2 {
