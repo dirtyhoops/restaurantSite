@@ -7,9 +7,13 @@ nav.black {
   position: fixed;
   width: 100%;
   transition: 0.5s;
-  // background-color: $color-black;
   padding: 3.5rem 0 1rem 0;
   z-index: 999;
+
+  @include respond(phone) {
+    padding: 1.5rem 0 1rem 0;
+    background-color: $color-black;
+  }
 
   &__logo {
     display: inline-block;
@@ -19,21 +23,58 @@ nav.black {
     text-align: center;
     color: $color-white;
     letter-spacing: 3px;
+
+    @include respond(phone) {
+      width: 80%;
+      text-align: left;
+      font-size: 3.5rem;
+    }
+  }
+
+  &__menuicon {
+    width: 15%;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 1.4rem 3rem;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+
+    @include respond(phone) {
+      display: block;
+      font-size: 2rem;
+    }
   }
 
   &__menu {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    flex-flow: wrap;
+
+    .showing {
+      @include respond(phone) {
+        max-height: 70vh;
+      }
+    }
 
     &--left {
       width: 35%;
       text-align: right;
+
+      @include respond(phone) {
+        width: 100%;
+      }
     }
 
     &--right {
       width: 35%;
       text-align: left;
+
+      @include respond(phone) {
+        width: 100%;
+      }
     }
 
     ul {
@@ -43,10 +84,22 @@ nav.black {
       padding: 0;
       margin: 0;
 
+      @include respond(phone) {
+        max-height: 0px;
+        transition: all 0.5s;
+      }
+
       li {
         display: inline-block;
         padding: 1rem 1.8rem;
         cursor: pointer;
+
+        @include respond(phone) {
+          box-sizing: border-box;
+          width: 100%;
+          margin-bottom: 4rem;
+          text-align: center;
+        }
 
         .nav__links {
           text-decoration: none;
@@ -55,8 +108,18 @@ nav.black {
           font-weight: 700;
           text-transform: uppercase;
           letter-spacing: 1px;
+
+          @include respond(phone) {
+            font-size: 2rem;
+          }
         }
       }
+    }
+  }
+
+  @include respond(phone) {
+    &__menu :nth-child(1) {
+      order: 1;
     }
   }
 }
