@@ -182,10 +182,11 @@ body {
           background-size: cover; }
       .about__team__container__grid__text--name {
         font-size: 2rem;
-        text-transform: capitalize; }
+        text-transform: capitalize;
+        letter-spacing: 1px; }
       .about__team__container__grid__text--title {
         font-size: 1.3rem;
-        text-transform: uppercase;
+        text-transform: capitalize;
         font-weight: 600;
         color: #da8525; }
 
@@ -476,7 +477,7 @@ body {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("https://images.squarespace-cdn.com/content/v1/5bf8c1132714e5d0ff5dbf45/1544760468029-6QBRKRULRCGA2KDYLKS5/ke17ZwdGBToddI8pDm48kH1uLua_ElEyolII291Geut7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0ooWhOa5cxQSJsU3rXf8luWGgOUPO97bhqmJmertGzFN1MXivYV5cOOAmrw0SWHIjw/scwheaderreverse.jpg?format=2500w");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.squarespace-cdn.com/content/v1/5bf8c1132714e5d0ff5dbf45/1544760468029-6QBRKRULRCGA2KDYLKS5/ke17ZwdGBToddI8pDm48kH1uLua_ElEyolII291Geut7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0ooWhOa5cxQSJsU3rXf8luWGgOUPO97bhqmJmertGzFN1MXivYV5cOOAmrw0SWHIjw/scwheaderreverse.jpg?format=2500w");
   background-size: cover;
   background-position: center;
   position: relative; }
@@ -485,9 +486,20 @@ body {
       background-position: 60% 50%; } }
   .header__header {
     position: absolute;
-    top: 50%;
-    left: 20%; }
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 40%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; }
+    .header__header__image {
+      width: 70%; }
     .header__header--main {
+      font-size: 5rem;
+      color: #fff; }
+    .header__header--sub {
+      font-size: 3rem;
       color: #fff; }
   .header__information {
     width: 100%;
@@ -534,18 +546,22 @@ nav.black {
       padding: 1.5rem 0 1rem 0;
       background-color: #000; } }
   .nav__logo {
-    display: inline-block;
-    font-size: 3rem;
-    width: auto;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 3.3rem;
+    width: 25%;
     padding: 0 2rem;
+    font-weight: bold;
     text-align: center;
     color: #fff;
-    letter-spacing: 3px; }
+    letter-spacing: 5px;
+    height: 5rem; }
     @media (max-width: 37.5em) {
       .nav__logo {
         width: 80%;
         text-align: left;
         font-size: 3.5rem; } }
+    .nav__logo__image {
+      width: 25%; }
   .nav__menuicon {
     width: 15%;
     text-align: right;
@@ -569,13 +585,13 @@ nav.black {
         max-height: 70vh; } }
     .nav__menu--left {
       width: 35%;
-      text-align: right; }
+      text-align: left; }
       @media (max-width: 37.5em) {
         .nav__menu--left {
           width: 100%; } }
     .nav__menu--right {
       width: 35%;
-      text-align: left; }
+      text-align: right; }
       @media (max-width: 37.5em) {
         .nav__menu--right {
           width: 100%; } }
@@ -588,6 +604,7 @@ nav.black {
       @media (max-width: 37.5em) {
         .nav__menu ul {
           max-height: 0px;
+          text-align: center;
           transition: all 0.5s; } }
       .nav__menu ul li {
         display: inline-block;
@@ -597,12 +614,11 @@ nav.black {
           .nav__menu ul li {
             box-sizing: border-box;
             width: 100%;
-            margin-bottom: 4rem;
-            text-align: center; } }
+            margin-bottom: 4rem; } }
         .nav__menu ul li .nav__links {
           text-decoration: none;
           color: #fff;
-          font-size: 1.5rem;
+          font-size: 1.4rem;
           font-weight: 700;
           text-transform: uppercase;
           letter-spacing: 1px; }

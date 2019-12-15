@@ -16,18 +16,24 @@ nav.black {
   }
 
   &__logo {
-    display: inline-block;
-    font-size: 3rem;
-    width: auto;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 3.3rem;
+    width: 25%;
     padding: 0 2rem;
+    font-weight: bold;
     text-align: center;
     color: $color-white;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
+    height: 5rem;
 
     @include respond(phone) {
       width: 80%;
       text-align: left;
       font-size: 3.5rem;
+    }
+
+    &__image {
+      width: 25%;
     }
   }
 
@@ -61,7 +67,7 @@ nav.black {
 
     &--left {
       width: 35%;
-      text-align: right;
+      text-align: left;
 
       @include respond(phone) {
         width: 100%;
@@ -70,7 +76,7 @@ nav.black {
 
     &--right {
       width: 35%;
-      text-align: left;
+      text-align: right;
 
       @include respond(phone) {
         width: 100%;
@@ -86,6 +92,7 @@ nav.black {
 
       @include respond(phone) {
         max-height: 0px;
+        text-align: center;
         transition: all 0.5s;
       }
 
@@ -98,13 +105,12 @@ nav.black {
           box-sizing: border-box;
           width: 100%;
           margin-bottom: 4rem;
-          text-align: center;
         }
 
         .nav__links {
           text-decoration: none;
           color: $color-white;
-          font-size: 1.5rem;
+          font-size: 1.4rem;
           font-weight: 700;
           text-transform: uppercase;
           letter-spacing: 1px;
