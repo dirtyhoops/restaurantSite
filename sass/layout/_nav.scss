@@ -1,6 +1,6 @@
 nav.black {
   background: $color-black;
-  padding: 1.5rem 0 1rem 0;
+  padding: 1rem 0 1rem 0;
 }
 
 .nav {
@@ -16,24 +16,24 @@ nav.black {
   }
 
   &__logo {
-    font-family: 'Architects Daughter', cursive;
-    font-size: 3.3rem;
     width: 25%;
     padding: 0 2rem;
-    font-weight: bold;
     text-align: center;
-    color: $color-white;
-    letter-spacing: 5px;
     height: 5rem;
 
     @include respond(phone) {
       width: 80%;
+      height: 6rem;
       text-align: left;
       font-size: 3.5rem;
     }
 
     &__image {
-      width: 25%;
+      width: 10rem;
+
+      @include respond(phone) {
+        width: 12rem;
+      }
     }
   }
 

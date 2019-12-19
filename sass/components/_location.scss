@@ -2,8 +2,8 @@
   padding: 0 0 20rem 0;
   font-size: 0;
 
-  @include respond(tab-portrait) {
-    padding: 0 4rem 20rem 4rem;
+  @include respond(tab-landscape) {
+    padding: 0 3rem 20rem 3rem;
   }
 
   &__header {
