@@ -41,7 +41,7 @@
       &__image {
         width: 100%;
         height: 35rem;
-        background-image: url('https://images.pexels.com/photos/2225580/pexels-photo-2225580.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        background-image: url('../../img/bar.jpg');
         background-size: cover;
         background-position: center center;
         box-shadow: 0 2rem 3rem rgba($color-black, 0.2);
@@ -109,7 +109,7 @@
           }
 
           &--1 {
-            background-image: url('https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+            background-image: url('../../img/headchef.jpg');
             background-position: 71% 0%;
             background-size: 50rem;
 
@@ -119,13 +119,13 @@
           }
 
           &--2 {
-            background-image: url('https://images.pexels.com/photos/1250426/pexels-photo-1250426.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+            background-image: url('../../img/headbartender.jpg');
             background-position: 50% 75%;
             background-size: cover;
           }
 
           &--3 {
-            background-image: url('https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+            background-image: url('../../img/manager.jpg');
             background-position: center top;
             background-size: cover;
           }
