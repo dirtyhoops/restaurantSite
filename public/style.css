@@ -167,7 +167,7 @@ body {
 .about__container__right__image {
   width: 100%;
   height: 35rem;
-  background-image: url('https://images.pexels.com/photos/2225580/pexels-photo-2225580.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-image: url('./img/bar.jpg');
   background-size: cover;
   background-position: center center;
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
@@ -233,7 +233,7 @@ body {
   }
 }
 .about__team__container__grid__image--1 {
-  background-image: url('https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-image: url('./img/headchef.jpg');
   background-position: 71% 0%;
   background-size: 50rem;
 }
@@ -243,12 +243,12 @@ body {
   }
 }
 .about__team__container__grid__image--2 {
-  background-image: url('https://images.pexels.com/photos/1250426/pexels-photo-1250426.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-image: url('./img/headbartender.jpg');
   background-position: 50% 75%;
   background-size: cover;
 }
 .about__team__container__grid__image--3 {
-  background-image: url('https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-image: url('./img/manager.jpg');
   background-position: center top;
   background-size: cover;
 }
@@ -400,7 +400,7 @@ body {
       rgba(255, 255, 255, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url('https://s3-media0.fl.yelpcdn.com/bphoto/zA_nRUTfM3tB4u_x1AaRXg/o.jpg');
+    url('./img/menu-pokenachos.jpg');
 }
 .images__img--2 {
   background-image: linear-gradient(
@@ -408,7 +408,7 @@ body {
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url('https://images.pexels.com/photos/46239/salmon-dish-food-meal-46239.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    url('./img/menu-salmonsalad.jpg');
 }
 .images__img--3 {
   background-image: linear-gradient(
@@ -416,7 +416,7 @@ body {
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url('https://i.pinimg.com/originals/fb/d1/c5/fbd1c59e131eedc2692fd34d98f7e879.jpg');
+    url('./img/menu-pansearedahi.jpg');
 }
 .images__img--4 {
   background-image: linear-gradient(
@@ -424,7 +424,7 @@ body {
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url('https://www.gannett-cdn.com/presto/2019/01/23/PNDN/95b07506-ff6d-45f2-bfce-a66c49dc10da-NDN_0123_IN_THE_KNOW_yard_house_13.jpg?width=2560');
+    url('./img/menu-bbqbaconburger.jpg');
 }
 .images__img--5 {
   background-image: linear-gradient(
@@ -432,7 +432,7 @@ body {
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url('https://s3-media0.fl.yelpcdn.com/bphoto/pRm2sH1YaQV3HDzVLRacfQ/o.jpg');
+    url('./img/menu-mule.jpg');
 }
 .images__img--6 {
   background-image: linear-gradient(
@@ -440,7 +440,7 @@ body {
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url('https://images.pexels.com/photos/159291/beer-machine-alcohol-brewery-159291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    url('./img/menu-draftbeer.jpg');
 }
 .images__img--7 {
   background-image: linear-gradient(
@@ -448,7 +448,7 @@ body {
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url('https://scontent-lhr3-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/69274249_2383865485067284_1630994424833829078_n.jpg?_nc_ht=scontent-lhr3-1.cdninstagram.com&oh=88cca37572bdbdb62c405700739eb26c&oe=5DFF1670&ig_cache_key=MjEyMjA0MzE3MzY3ODA3OTc4OQ%3D%3D.2');
+    url('./img/menu-brownies.jpg');
 }
 .images__img--8 {
   background-image: linear-gradient(
@@ -456,7 +456,7 @@ body {
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url('https://s3-media0.fl.yelpcdn.com/bphoto/kmX0TjYenubm1vG3iJKB7A/o.jpg');
+    url('./img/menu-crabcake.jpg');
 }
 .images__img--9 {
   background-image: linear-gradient(
@@ -464,7 +464,7 @@ body {
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url('https://images.pexels.com/photos/4784/alcohol-bar-party-cocktail.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    url('./img/menu-mojito.jpg');
 }
 .images__text {
   position: absolute;
@@ -699,7 +699,7 @@ body {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url('https://images.squarespace-cdn.com/content/v1/5bf8c1132714e5d0ff5dbf45/1544760468029-6QBRKRULRCGA2KDYLKS5/ke17ZwdGBToddI8pDm48kH1uLua_ElEyolII291Geut7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0ooWhOa5cxQSJsU3rXf8luWGgOUPO97bhqmJmertGzFN1MXivYV5cOOAmrw0SWHIjw/scwheaderreverse.jpg?format=2500w');
+    url('./img/scwheaderreverse.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -956,7 +956,7 @@ nav.black {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url('https://storage.needpix.com/rsynced_images/pineapple-1406119_1280.jpg');
+    url('./img/drinks-bg.jpg');
   background-size: cover;
   background-position: center;
 }

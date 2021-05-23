@@ -405,7 +405,6 @@ body {
 .menu__list {
   display: flex;
   width: 100%;
-  padding: 1rem;
   flex-wrap: wrap;
   justify-content: space-between; }
   .menu__list__items {
@@ -671,7 +670,7 @@ nav.black {
 .section-menu-drinks {
   min-height: 100vh;
   padding: 10rem 0;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/drinks-bg.jpg");
+  background-image: linear-gradient(to right bottom, rgba(27, 26, 26, 0.5), rgba(27, 26, 26, 0.5)), url("../../img/drinks-bg.jpg");
   background-size: cover;
   background-position: center; }
   @media (max-width: 75em) {
